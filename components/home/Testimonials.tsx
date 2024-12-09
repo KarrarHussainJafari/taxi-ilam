@@ -1,31 +1,33 @@
-import { Star } from 'lucide-react';
-import { Card } from '@/components/ui/card';
-
+import { Star } from "lucide-react";
+import { Card } from "@/components/ui/card";
 const testimonials = [
   {
     name: "Sarah Johnson",
-    text: "The most reliable taxi service I've ever used. Always on time and very professional."
+    text: "De meest betrouwbare taxiservice die ik ooit heb gebruikt. Altijd op tijd en zeer professioneel.",
   },
   {
     name: "Michael Chen",
-    text: "Excellent service! The driver was very courteous and the car was immaculately clean."
+    text: "Uitstekende service! De chauffeur was zeer beleefd en de auto was perfect schoon.",
   },
   {
     name: "Emma Davis",
-    text: "I feel safe and comfortable every time. Highly recommended for everyone."
-  }
+    text: "Ik voel me altijd veilig en comfortabel. Absoluut een aanrader voor iedereen.",
+  },
 ];
 
 export function Testimonials() {
   return (
-    <div className="text-center">
-      <h2 className="text-3xl font-bold mb-8">What Our Customers Say</h2>
+    <div className="text-center pb-6">
+      <h2 className="text-3xl font-bold mb-8">Wat Onze Klanten Zeggen</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {testimonials.map((testimonial, index) => (
           <Card key={index} className="p-6">
             <div className="flex items-center justify-center mb-4">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                <Star
+                  key={i}
+                  className="h-4 w-4 text-yellow-400 fill-current"
+                />
               ))}
             </div>
             <p className="text-gray-600 mb-4">{testimonial.text}</p>

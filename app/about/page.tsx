@@ -1,25 +1,33 @@
+import Image from "next/image";
+
 const About = () => (
   <div className="container mx-auto p-8">
-    <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6">
-      <img
-        src="/driver-photo.jpg"
-        alt="Driver"
-        className="rounded-full w-40 h-40 shadow-lg"
+    <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 justify-center md:justify-start p-4">
+      <Image
+        src="/images/taxi-front.jpeg"
+        alt="Trusted taxi driver in Sint-Niklaas - Ali Raza"
+        className="rounded-full shadow-lg"
+        width={160}
+        height={160}
       />
       <div>
-        <h2 className="text-2xl font-bold">John Doe - Trusted Taxi Driver</h2>
+        <h2 className="text-2xl font-bold">
+          Betrouwbare taxichauffeur in Sint-Niklaas - Ali Raza
+        </h2>
         <p className="mt-4 text-gray-700">
-          With over 10 years of experience, I am committed to providing safe,
-          reliable, and professional rides. I’m certified and have countless
-          testimonials from happy clients.
+          Met meer dan 10 jaar ervaring bieden wij veilige en comfortabele
+          ritten in Sint-Niklaas, Beveren, Lokeren, en Temse.
         </p>
       </div>
     </div>
     <div className="mt-6">
-      <h3 className="text-xl font-semibold">Testimonials</h3>
+      <h3 className="text-xl font-semibold">Klantbeoordelingen</h3>
       <ul className="mt-4 space-y-2">
-        <li>⭐️⭐️⭐️⭐️⭐️ "John is always on time and friendly!" - Sarah</li>
-        <li>⭐️⭐️⭐️⭐️⭐️ "The ride was smooth and professional." - Alex</li>
+        <li>
+          ⭐️⭐️⭐️⭐️⭐️ "Ali is altijd op tijd. Beste taxi in Sint-Niklaas!" -
+          Marie uit Temse
+        </li>
+        <li>⭐️⭐️⭐️⭐️⭐️ "De rit was soepel en professioneel." - Alex</li>
       </ul>
     </div>
   </div>

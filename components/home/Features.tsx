@@ -1,27 +1,31 @@
-import { Shield, Clock, Award, Star } from 'lucide-react';
-import { Card } from '@/components/ui/card';
+import { Shield, Clock, Award, Star } from "lucide-react";
+import { Card } from "@/components/ui/card";
 
 const features = [
   {
     icon: Shield,
-    title: "Licensed & Insured",
-    description: "Fully licensed and insured for your peace of mind"
+    title: "Vergunning & Verzekerd",
+    description:
+      "Volledig vergund en verzekerd voor uw gemoedsrust. Kies een taxi in Sint-Niklaas waarop u kunt vertrouwen.",
   },
   {
     icon: Clock,
-    title: "24/7 Service",
-    description: "Available round the clock for your convenience"
+    title: "24/7 Beschikbaarheid",
+    description:
+      "Dag en nacht beschikbaar voor uw gemak. Boek uw taxi wanneer u maar wilt, in Sint-Niklaas en omliggende steden.",
   },
   {
     icon: Award,
-    title: "Experienced Driver",
-    description: "Over 10 years of professional driving experience"
+    title: "Ervaren Chauffeur",
+    description:
+      "Meer dan 10 jaar professionele rijervaring. Veilig, betrouwbaar en perfect voor taxi ritten in Sint-Niklaas.",
   },
   {
     icon: Star,
-    title: "5-Star Service",
-    description: "Consistently rated 5 stars by our customers"
-  }
+    title: "5-Sterren Service",
+    description:
+      "Altijd beoordeeld met 5 sterren door tevreden klanten. Voor topkwaliteit taxiservice in Sint-Niklaas.",
+  },
 ];
 
 export function Features() {

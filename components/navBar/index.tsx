@@ -2,6 +2,11 @@
 import { useState } from "react";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/24/solid";
+import Image from "next/image";
+import { Phone } from "lucide-react";
+import { Button } from "../ui/button";
+
+const taxiDriverNumber = "+32466017437";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,10 +26,18 @@ const NavBar = () => {
         className="text-xl font-bold shrink-0 hover:underline transition-all duration-200 hover:scale-110 cursor-pointer"
         onClick={closeMenu}
       >
-        Taxi Ilam
+        <div className="flex gap-2 items-center">
+          <Image
+            src="/images/taxi-ilam.png"
+            alt="Betrouwbare Taxi Service in Sint-Niklaas"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
+          Taxi Ilam
+        </div>
       </Link>
 
-      {/* Hamburger icon for small screens */}
       <button
         className="lg:hidden flex items-center justify-center p-2 rounded-md text-white"
         onClick={toggleMenu}
@@ -32,14 +45,20 @@ const NavBar = () => {
         <Bars3Icon className="text-white h-8 w-8 transition-all duration-200 hover:scale-110 cursor-pointer"></Bars3Icon>
       </button>
 
-      {/* divigation Links */}
       <div
-        className={`flex gap-4 lg:flex lg:gap-4 ${
+        className={`flex items-center gap-4 lg:flex lg:gap-4 ${
           isMenuOpen
-            ? "flex-col absolute top-16 right-0 bg-blue-400 p-4 max-w-96"
+            ? "flex-col absolute top-16 right-0 bg-blue-500 p-4 max-w-96"
             : "hidden"
         } lg:flex lg:relative`}
       >
+        <Link
+          href="/"
+          className="hover:underline transition-all duration-200 hover:scale-110 cursor-pointer"
+          onClick={closeMenu}
+        >
+          Home
+        </Link>
         <Link
           href="/about"
           className="hover:underline transition-all duration-200 hover:scale-110 cursor-pointer"
@@ -48,14 +67,14 @@ const NavBar = () => {
           Over
         </Link>
         <Link
-          href="/booking"
+          href="/boek-taxi"
           className="hover:underline transition-all duration-200 hover:scale-110 cursor-pointer"
           onClick={closeMenu}
         >
           Boeking
         </Link>
         <Link
-          href="/rates"
+          href="/ritprijs-berekenen"
           className="hover:underline transition-all duration-200 hover:scale-110 cursor-pointer"
           onClick={closeMenu}
         >
@@ -68,6 +87,14 @@ const NavBar = () => {
         >
           Contact
         </Link>
+        <Button variant="ghost">
+          <a href={`tel:${taxiDriverNumber}`}>
+            <div className="flex items-center gap-1">
+              <Phone className="mr-2 h-4 w-4" />
+              Bel
+            </div>
+          </a>
+        </Button>
       </div>
     </div>
   );

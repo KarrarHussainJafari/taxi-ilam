@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Phone, Mail, MapPin } from "lucide-react";
 
-const contactInfo = [
+export const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
@@ -18,7 +18,7 @@ const contactInfo = [
     icon: MapPin,
     title: "Address",
     content: "Antwerpse Steenweg 108, 9100 Sint-Niklaas",
-    href: "https://maps.google.com",
+    href: "https://maps.app.goo.gl/w155whVwcGniCDAb8",
   },
 ];
 
