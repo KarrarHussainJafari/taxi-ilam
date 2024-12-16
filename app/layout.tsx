@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <head>
-        <link rel="icon" href="/images/logo-icon.ico" />
+        <link rel="icon" href="/images/logo-icon2.ico" />
       </head>
       <body className={`${inter.className}`}>
         <div className="flex w-screen h-screen justify-center items-center">
