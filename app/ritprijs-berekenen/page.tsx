@@ -83,20 +83,20 @@ const Rates = () => {
         </div>
 
         {/* Indicatieve Prijs Section */}
-        {/* <div className="mb-6">
+        <div className="mb-6">
           <h3 className="text-xl font-semibold mb-2">Indicatieve prijs</h3>
           <p>
             Indicatieve prijs = prijs voor een rit van 10 km als die 15 minuten
             duurt, op basis van bovenstaande tariefelementen.{": "}
             <strong>€31,00</strong>
           </p>
-          <ul className="mt-2 list-disc pl-6 text-sm text-gray-600">
+          {/*<ul className="mt-2 list-disc pl-6 text-sm text-gray-600">
             <li>Startprijs: €5</li>
             <li>Kilometers: 10 km × €2,00 = €20</li>
             <li>Tijd: 15 min × €0,40 = €6</li>
             <li>Totale prijs: €5 + €20 + €6 = €31</li>
-          </ul>
-        </div> */}
+          </ul>*/}
+        </div>
 
         {/* Fixed Price Rides Section */}
         <div className="mb-6">
